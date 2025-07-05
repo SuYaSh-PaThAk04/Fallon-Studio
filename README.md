@@ -131,13 +131,6 @@ npm start
 
 ---
 
-## 🖥️ Screenshots
-
-| Kanban Board                                  | Activity Log                                | Create/Edit Task                              |
-| --------------------------------------------- | ------------------------------------------- | --------------------------------------------- |
-| ![Board](https://via.placeholder.com/300x200) | ![Log](https://via.placeholder.com/300x200) | ![Modal](https://via.placeholder.com/300x200) |
-
----
 
 ## ⚡ Key Highlights
 
