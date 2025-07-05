@@ -8,8 +8,8 @@ A full-stack **real-time collaborative Kanban board** where multiple users can c
 
 ## 🌐 Live Demo
 
-Frontend: [https://todo-frontend-your-link.vercel.app](https://todo-frontend-your-link.vercel.app)
-Backend: [https://todo-backend-your-link.onrender.com](https://todo-backend-your-link.onrender.com)
+Frontend: [https://todo-frontend-your-link.vercel.app](https://todo-frontend-ten-roan.vercel.app/)
+Backend: [https://todo-backend-your-link.onrender.com](https://realtime-todo-app.onrender.com)
 
 ---
 🔑 Test Account (Demo Credentials)
