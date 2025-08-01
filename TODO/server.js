@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 import userRoutes from './routes/User.Routes.js';
 import taskRoutes from './routes/Task.Routes.js';
 import logRoutes from './routes/Activity.Routes.js';
-
+import aiRoutes from './routes/ai.router.js'
 dotenv.config();
 
 const app = express();
@@ -35,7 +35,7 @@ app.use(cors({
 app.use('/api/users', userRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/logs', logRoutes);
-
+app.use('/api/input',aiRoutes)
 mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true
