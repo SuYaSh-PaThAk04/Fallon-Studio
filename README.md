@@ -158,7 +158,7 @@ npm start
 **Suyash Pathak**
 
 * LinkedIn: [linkedin.com/in/suyashpathak](www.linkedin.com/in/suyash-pathak-4347b5283)
-* Portfolio: [your-portfolio-link.com](https://suyashpathak-portfolio.netlify.app/)
+* Portfolio: [My_Portfolio](https://suyashpathak-portfolio.netlify.app/)
 
 ---
 
