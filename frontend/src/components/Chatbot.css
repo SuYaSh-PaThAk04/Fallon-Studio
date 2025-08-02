@@ -1,0 +1,178 @@
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1001;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.chat-button:hover {
+  background-color: #005dc1;
+  transform: translateY(-2px);
+}
+
+.chat-button img {
+  width: 22px;
+  height: 22px;
+}
+
+/* Chat window */
+.chatbox {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 340px;
+  height: 460px;
+  background: var(--chatbox-bg);
+  color: var(--text-color);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 1002;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 17px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.chat-header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Chat messages */
+.chat-body {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background: var(--chat-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-msg {
+  padding: 10px 14px;
+  border-radius: 14px;
+  max-width: 80%;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.chat-msg.user {
+  background-color: var(--bubble-user);
+  align-self: flex-end;
+  border-top-right-radius: 0;
+}
+
+.chat-msg.bot {
+  background-color: var(--bubble-bot);
+  align-self: flex-start;
+  border-top-left-radius: 0;
+}
+
+/* Typing indicator */
+.typing {
+  display: flex;
+  gap: 4px;
+  padding: 8px 12px;
+  background-color: #e2e3e5;
+  border-radius: 14px;
+  width: fit-content;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #555;
+  border-radius: 50%;
+  animation: blink 1.2s infinite ease-in-out;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0%,
+  80%,
+  100% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+/* Chat input */
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding: 8px;
+  background: white;
+  color: black;
+}
+[data-theme='dark'] .chat-input input {
+  background: #222;
+  color: white;
+}
+
+.chat-input input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.chat-input button {
+  margin-left: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
